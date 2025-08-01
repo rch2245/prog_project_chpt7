@@ -1,3 +1,43 @@
+// ===============================================
+// World Series Champions Program - Analysis & Design
+// ===============================================
+
+// Types of Input:
+// - File input: Teams.txt (team names) and WorldSeriesWinners.txt (historical winners)
+
+// Program Output:
+// - Display list of all teams that have won a World Series
+// - Prompt for team name
+// - Output number of wins or error message if not found
+
+// Algorithm / Tasks:
+// 1. Load teams and winner list into vectors
+// 2. Display all available teams
+// 3. Prompt user for team name until 'quit'
+// 4. If team exists:
+//    - Count and display wins
+//    Else:
+//    - Show error message
+
+// Hierarchy Chart:
+// runWorldSeriesLookup()
+// - getTeams()
+// - teamExists()
+// - findWinner()
+
+// Pseudocode:
+// getTeams("Teams.txt", teams)
+// getTeams("WorldSeriesWinners.txt", winners)
+// display teams
+// loop:
+//     prompt for team
+//     if teamExists:
+//         count = findWinner(team, winners)
+//         display count
+//     else:
+//         display error
+
+
 #include "pch.h"
 #include <iostream>
 #include <fstream>
