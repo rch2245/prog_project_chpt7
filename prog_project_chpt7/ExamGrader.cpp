@@ -1,3 +1,37 @@
+// ============================================
+// Exam Grader Program - Analysis & Design
+// ============================================
+
+// Types of Input:
+// - File input: CorrectAnswers.txt and StudentAnswers.txt (20 lines each)
+
+// Program Output:
+// - List of missed questions with correct vs student answers
+// - Total number of missed questions
+// - Percentage score
+// - Pass/fail message based on 70% threshold
+
+// Algorithm / Tasks:
+// 1. Read answer key and student answers into arrays
+// 2. Compare arrays and track missed questions
+// 3. Calculate percentage of correct answers
+// 4. Display detailed report using writeReport()
+
+// Hierarchy Chart:
+// runExamGrader()
+// - getAnswers()
+// - gradeExam()
+// - writeReport()
+
+// Pseudocode:
+// getAnswers(correctAnswers)
+// getAnswers(studentAnswers)
+// gradeExam(correctAnswers, studentAnswers, missed, incorrect)
+// writeReport(missed, incorrect)
+
+
+
+
 #include "pch.h"
 #include <iostream>
 #include <fstream>
