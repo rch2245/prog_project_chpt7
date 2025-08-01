@@ -3,7 +3,7 @@
 // ===========================================
 
 // Types of Input:
-// - Player 1 and Player 2 enter row and column values (1–3) for moves.
+// - Player 1 and Player 2 enter row and column values (1â€“3) for moves.
 
 // Program Output:
 // - Display of the 3x3 game board.
@@ -50,25 +50,6 @@
 // if X_WIN: "Player 1 wins"
 // else if O_WIN: "Player 2 wins"
 // else: "It's a tie"
-
-// Example Output:
-// Player 1's Turn (X):
-// Enter the row (1-3): 1
-// Enter the column (1-3): 1
-
-//   1 2 3
-// 1 X * *
-// 2 * * *
-// 3 * * *
-//
-// Player 2's Turn (O):
-// Enter the row (1-3): 2
-// Enter the column (1-3): 2
-
-//   1 2 3
-// 1 X * *
-// 2 * O *
-// 3 * * *
 
 #include "pch.h"
 #include <iostream>
