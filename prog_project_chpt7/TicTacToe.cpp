@@ -1,75 +1,74 @@
-//===========================================
-//Tic-Tac-Toe Game - Program Analysis & Design
-//===========================================
+// ===========================================
+// Tic-Tac-Toe Game - Program Analysis & Design
+// ===========================================
 
-//Types of Input:
-//- Player 1 and Player 2 enter row and column values (1–3) for moves.
+// Types of Input:
+// - Player 1 and Player 2 enter row and column values (1–3) for moves.
 
-//Program Output:
-//- Display of the 3x3 game board.
-//- Player prompts for turns.
-//- Result declaration (Player 1 wins, Player 2 wins, or Tie).
+// Program Output:
+// - Display of the 3x3 game board.
+// - Player prompts for turns.
+// - Result declaration (Player 1 wins, Player 2 wins, or Tie).
 
-//Formula / Logic:
-//- Win: 3 of the same token in a row, column, or diagonal.
-//- Tie: All cells filled without a winner.
+// Formula / Logic:
+// - Win: 3 of the same token in a row, column, or diagonal.
+// - Tie: All cells filled without a winner.
 
-//Algorithm / Tasks:
-//1. Initialize 3x3 board to '*'
-//2. Display board
-//3. While game state is "PLAY":
+// Algorithm / Tasks:
+// 1. Initialize 3x3 board to '*'
+// 2. Display board
+// 3. While game state is "PLAY":
 //    a. Prompt Player 1, get input, place 'X', check state, display board
 //    b. If not done, prompt Player 2, get input, place 'O', check state
-//4. Display result message
+// 4. Display result message
 
-//Hierarchy Chart:
-//runTicTacToe()
-//? initializeBoard()
-//? displayBoard()
-//? placeToken()
-//      ? getLocation()
-//? getBoardState()
-//      ? checkForWinner()
-//      ? boardHasSpace()
+// Hierarchy Chart:
+// runTicTacToe()
+// - initializeBoard()
+// - displayBoard()
+// - placeToken()
+//   - getLocation()
+// - getBoardState()
+//   - checkForWinner()
+//   - boardHasSpace()
 
-//Pseudocode:
-//initializeBoard(board)
-//displayBoard(board)
-//while state == PLAY:
-//    Player 1's Turn
-//    placeToken(X)
-//    displayBoard()
-//    checkBoardState(X)
-//    if win/tie break
+// Pseudocode:
+// initializeBoard(board)
+// displayBoard(board)
+// while state == PLAY:
+//     Player 1's Turn
+//     placeToken(X)
+//     displayBoard()
+//     checkBoardState(X)
+//     if win/tie break
 //
-//    Player 2's Turn
-//    placeToken(O)
-//    displayBoard()
-//    checkBoardState(O)
-//
-//if X_WIN: "Player 1 wins"
-//else if O_WIN: "Player 2 wins"
-//else: "It's a tie"
-//
-//Example Output:
-//Player 1's Turn (X):
-//Enter the row (1-3): 1
-//Enter the column (1-3): 1
-//
-//  1 2 3
-//1 X * *
-//2 * * *
-//3 * * *
-//
-//Player 2's Turn (O):
-//Enter the row (1-3): 2
-//Enter the column (1-3): 2
-//
-//  1 2 3
-//1 X * *
-//2 * O *
-//3 * * *
+//     Player 2's Turn
+//     placeToken(O)
+//     displayBoard()
+//     checkBoardState(O)
 
+// if X_WIN: "Player 1 wins"
+// else if O_WIN: "Player 2 wins"
+// else: "It's a tie"
+
+// Example Output:
+// Player 1's Turn (X):
+// Enter the row (1-3): 1
+// Enter the column (1-3): 1
+
+//   1 2 3
+// 1 X * *
+// 2 * * *
+// 3 * * *
+//
+// Player 2's Turn (O):
+// Enter the row (1-3): 2
+// Enter the column (1-3): 2
+
+//   1 2 3
+// 1 X * *
+// 2 * O *
+// 3 * * *
 
 #include "pch.h"
 #include <iostream>
